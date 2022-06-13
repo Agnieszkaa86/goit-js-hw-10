@@ -51,11 +51,11 @@ function renderCountryList(countries) {
           <img class = "flag_img" src = "${flags.svg}">
             <h2>${name}</h2>
             </div>
-         <li class= "country_list" > </li>
+         <li class= "country_item" > </li>
           <p><b>Capital</b>:${capital}</p>
-         <li class= "country_list" ></li>
+         <li class= "country_item" ></li>
           <p><b>Population</b>: ${population}</p> 
-         <li class= "country_list" > </li>
+         <li class= "country_item" > </li>
           <p><b>Languages</b>: ${languages.map(({ name }) => ' ' + name)}</p>`;
       })
       .join('');
