@@ -16,5 +16,35 @@ body {
   font: inherit;
   padding: 8px;
   max-width: 320px;
+  margin: 40px;
   margin-bottom: 16px;
+  border: 2px;
+  border-color: blue;
+  border-style: solid;
+  border-radius: 1px;;
 }
+li{
+  list-style: none;
+}
+.country-info{
+  margin: 40px;
+}
+.flag_img{
+  margin-right: 40px;
+  width: 120px;
+  box-shadow: 1px 2px 3px gray;
+}
+.main{
+display: flex;
+align-items: center;
+margin-bottom: 25px;
+}
+p{
+  margin-right: 22px;
+  display: block;
+}
+.country_list{
+  display: flex;
+}
+
+

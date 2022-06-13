@@ -37,7 +37,7 @@ function renderCountryList(countries) {
       
     const markup = countries
       .map(({ name, flags }) => {
-        return `<li class= "country_list"><img class= "flag_img" src= "${flags.svg}">
+        return `<li class= "country-list"><img class= "flag_img" src= "${flags.svg}">
                 <h1>${name}</h1>
                 </li>`;
     })
@@ -46,21 +46,17 @@ function renderCountryList(countries) {
   }else if (countries.length === 1){
     resetList();
     const markup = countries
-      .map(({ name, flags,capital, population, languages }) => {
-        return `< div class = "main" >
-          <img class = "div_flag" src = "${flags.svg}">
+      .map(({ name, flags, capital, population, languages }) => {
+       return `<div class = "main" >
+          <img class = "flag_img" src = "${flags.svg}">
             <h2>${name}</h2>
             </div>
-         < li class= "country_list" >
-          </li>
-          <p><b>Capital</b>: ${capital}</p>
-           </li>
-         < li class= "country_list" >
+         <li class= "country_list" > </li>
+          <p><b>Capital</b>:${capital}</p>
+         <li class= "country_list" ></li>
           <p><b>Population</b>: ${population}</p> 
-          </li>
-         < li class= "country_list" >
-          <p>Languages</b>: ${languages.map(({name}) => ' ' + name )}</p>
-           </li >`;
+         <li class= "country_list" > </li>
+          <p><b>Languages</b>: ${languages.map(({ name }) => ' ' + name)}</p>`;
       })
       .join('');
 countryInfo.innerHTML = markup;
